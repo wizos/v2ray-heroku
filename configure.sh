@@ -24,10 +24,7 @@ cat << EOF > /usr/local/etc/v2ray/config.json
                         "id":"$UUID"
                     }
                 ],
-                "decryption":"none",
-                "fallback":{
-                    "port":80
-                }
+                "decryption":"none"
             },
             "streamSettings":{
                 "network":"ws"
