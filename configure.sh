@@ -16,15 +16,15 @@ cat << EOF > /usr/local/etc/v2ray/config.json
 {
     "inbounds":[
         {
-            "port":$PORT,
+            "port":8080,
             "protocol":"vless",
             "settings":{
                 "clients":[
                     {
-                        "id":"$UUID"
+                        "id":"$UUID",
+                        "alterId":64
                     }
-                ],
-                "decryption":"none"
+                ]
             },
             "streamSettings":{
                 "network":"ws"
